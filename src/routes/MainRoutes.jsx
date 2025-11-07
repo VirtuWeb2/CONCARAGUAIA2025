@@ -23,7 +23,7 @@ function App() {
     async () => {
       return (
         await axios.get("https://api-sites-en.vercel.app/news")
-      ).data.sort((a, b) => b.id - a.id).filter((n)=> n.muni === "altamira" || n.muni === "pará");
+      ).data.sort((a, b) => b.id - a.id).filter((n)=> n.muni === "conceicaoaraguaia" || n.muni === "pará");
     },
   );
 
@@ -32,7 +32,7 @@ function App() {
     async () => {
       return (await axios.get("https://api-sites-en.vercel.app/tv")).data.sort(
         (a, b) => b.id - a.id
-      ).filter(t=> t.muni === "altamira" || t.muni === "pará");
+      ).filter(t=> t.muni === "conceicaoaraguaia" || t.muni === "pará");
     }
   );
   return (

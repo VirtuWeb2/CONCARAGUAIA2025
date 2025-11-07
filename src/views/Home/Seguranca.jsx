@@ -13,7 +13,7 @@ const Seguranca = ({news, loadingNews, tvPosts,loadingTvPosts}) => {
       <Helmet>
         <title>Segurança | É Notícia Conceição do Araguaia</title>
       </Helmet>
-      <Header />
+      <Header/>
       <Ad/>
       <div
         className="container-width"
